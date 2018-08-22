@@ -1,0 +1,46 @@
+{
+    "name": "tm-nuxtjs-starter",
+    "version": "1.0.0",
+    "description": "vue+nuxtjs+vuex starter",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nuxt",
+        "build": "nuxt build",
+        "start": "nuxt start",
+        "export": "nuxt generate",
+        "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+        "precommit": "npm run lint",
+        "pyserve": "cd dist; python3 -m http.server",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tomimick/tm-nuxtjs-starter.git"
+    },
+    "keywords": [
+        "vue",
+        "nuxtjs",
+        "vuex",
+        "axios"
+    ],
+    "author": "Tomi Mickelsson",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/tomimick/tm-nuxtjs-starter/issues"
+    },
+    "homepage": "https://github.com/tomimick/tm-nuxtjs-starter",
+    "dependencies": {
+        "axios": "^0.18.0",
+        "nuxt-edge": "^2.0.0-25581162.820f0fa",
+        "vuex": "^3.0.1"
+    },
+    "devDependencies": {
+        "node-sass": "^4.9.3",
+        "sass-loader": "^7.1.0",
+        "babel-eslint": "^8.2.6",
+        "eslint": "^5.4.0",
+        "eslint-loader": "^2.1.0",
+        "eslint-plugin-vue": "^4.7.1"
+    }
+}
+
