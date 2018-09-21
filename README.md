@@ -19,8 +19,10 @@ delete a movie.
 
 The demo uses browser localStorage for the data storage, which means it runs
 without a backend.  The sources do contain a module that does real AJAX calls
-to a REST backend - you just need to enable the module and write a server,
-and you are in good track to have a real web app.
+to a REST backend - you just need to enable the module and write a server, and
+you are in good track to have a real web app. I have developed
+[RESTPie3 Python REST API server](https://github.com/tomimick/restpie3) which
+implements this simple movie API as an example.
 
 
 Building blocks
@@ -62,11 +64,12 @@ Source tree
 │       └── /movies.json          # sample list of 4 movies - loaded initially
 ├── /store/                     # data stores managed by Vuex
 │   └── /index.js                 # the single store for this app
-├── nuxt.config.js              # nuxtjs configuration
+├── config.js                   # app config, select ajax or localstorage
+├── nuxt.config.js              # nuxtjs config
 ├── package-lock.json           # npm something
 ├── package.json                # list of npm packages required
 ├── README.md                   # this doc
-├── serverapi.js                # API, talks AJAX to a real backend (inactive)
+├── serverapi_ajax.js           # API, talks AJAX to a real backend
 └── serverapi_localstorage.js   # API, talks to localStorage
 ```
 
@@ -242,12 +245,16 @@ this [Reddit
 thread](https://www.reddit.com/r/javascript/comments/8o781t/vuejs_or_react_which_you_would_chose_and_why/).
 
 
-Support
--------
+Need help?
+----------
 
-Go ahead and take this starter, code or ideas, and build your great app.  You
-can also [contact me](mailto:atomi@iki.fi) to ask if I am available for
-freelancing work.
+Go ahead and take this Vue starter and perhaps my [RESTPie3 Python REST API
+server](https://github.com/tomimick/restpie3) too and build your great
+service.
+
+You can also [contact me](mailto:tomi.mickelsson@gmail.com) to ask if I am
+available for freelancing work.
+
 
 React version
 -------------
