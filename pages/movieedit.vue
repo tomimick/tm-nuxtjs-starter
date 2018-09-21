@@ -57,12 +57,15 @@ export default {
             this.$router.go(-1);
         },
         onSubmit() {
-            if (!this.movie.title)
+            var t = this;
+
+            if (!t.movie.title)
                 return;
 
             // save the data and go to home page which refreshes itself
-            api.save_movie(this.movie);
-            this.$router.push('/');
+            api.save_movie(t.movie)
+                .then(reply => t.$router.push('/'))
+                .catch(error => alert("Error occurred"));
         }
     }
 }

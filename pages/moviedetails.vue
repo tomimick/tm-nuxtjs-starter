@@ -52,8 +52,10 @@ export default {
             if (!confirm("Delete this movie?"))
                 return;
 
-            api.delete_movie(this.movie_id);
-            this.$router.go(-1);
+            var t = this;
+            api.delete_movie(t.movie_id)
+                .then(reply => t.$router.go(-1))
+                .catch(error => alert("Error occurred"));
         }
     }
 }
