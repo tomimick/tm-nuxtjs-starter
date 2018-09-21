@@ -15,8 +15,6 @@
 </template>
 
 <script>
-import api from "../serverapi"
-
 export default {
     components: {},
     mounted() {

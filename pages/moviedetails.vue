@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import api from "../serverapi"
+import api from "../config"
 
 export default {
     components: {},

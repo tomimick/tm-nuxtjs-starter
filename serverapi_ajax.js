@@ -6,16 +6,11 @@
  * Calls return promises.
  *
  * (Wish I could use async/await but browser support is still lacking.)
- *
- * Mockup class serverapi_localstorage for DEMO is activated at bottom.
  */
 
 import axios from "axios"
 
-import api_mockup from "./serverapi_localstorage"
-
 const URL_MOVIES = "/api/movies";
-
 
 class ServerAPI {
 
@@ -44,9 +39,7 @@ class ServerAPI {
     }
 }
 
-// export singleton API - either real or mockup
-//const api = new ServerAPI();
-const api = api_mockup;
-
+// export singleton API
+const api = new ServerAPI();
 export default api;
 

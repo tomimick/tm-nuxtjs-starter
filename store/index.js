@@ -5,7 +5,7 @@
  */
 
 import Vuex from 'vuex';
-import api from "../serverapi";
+import api from "../config";
 
 const store = () => {
     return new Vuex.Store({

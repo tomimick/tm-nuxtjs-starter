@@ -98,6 +98,6 @@ class LocalStorageAPI {
 }
 
 // export singleton object
-const api_mockup = new LocalStorageAPI();
-export default api_mockup;
+const api = new LocalStorageAPI();
+export default api;
 
