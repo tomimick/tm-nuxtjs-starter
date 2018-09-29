@@ -119,9 +119,6 @@ Nuxt.js is directly inspired by [Nextjs](https://nextjs.org/) which is the
 same framework for the React ecosystem. Nuxt.js introduces a little more
 hierarchy, having folders for layouts, plugins, and middleware.
 
-This starter uses the nuxt-edge package, which is the upcoming Nuxt version 2
-that relies on the latest, greatest Webpack 4.
-
 
 Vuex state management
 ---------------------
