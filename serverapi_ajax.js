@@ -13,12 +13,14 @@
 
 import axios from "axios"
 
-const URL_MOVIES = "http://localhost:8100/api/movies/";
+const URL_BASE = "http://localhost:8100/api/";
+const URL_MOVIES = "movies/";
 
 class ServerAPI {
 
     constructor() {
         this.client = axios.create({
+            baseURL: URL_BASE,
             withCredentials: true, // pass cookies to cross-site api
         });
     }
